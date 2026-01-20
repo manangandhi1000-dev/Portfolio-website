@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio | Full Stack Assignment</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #ffffff;
+    }
+
+    /* ================= HEADER ================= */
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #6366f1, #22d3ee);
+      border-bottom-left-radius: 45px;
+      border-bottom-right-radius: 45px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    header a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 25px;
+      background: #0f172a;
+      color: #fff;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    header a:hover {
+      background: #020617;
+    }
+
+    /* ================= CONTAINER ================= */
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      color: #22d3ee;
+      margin-bottom: 15px;
+      font-size: 22px;
+    }
+
+    /* ================= GLASS CARDS ================= */
+    .card {
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(14px);
+      border-radius: 20px;
+      padding: 25px;
+      border: 1px solid rgba(255,255,255,0.2);
+      transition: 0.4s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    /* ================= FLEX LAYOUT ================= */
+    .flex-layout {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    .flex-layout .card {
+      flex: 1 1 280px;
+    }
+
+    /* ================= GRID LAYOUT ================= */
+    .grid-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    /* ================= LINKS ================= */
+    a {
+      color: #a5f3fc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ================= FOOTER ================= */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+      margin-top: 40px;
+    }
+
+    /* ================= RESPONSIVE ================= */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header>
+    <h1>Manan Gandhi</h1>
+    <p>Full Stack Developer</p>
+    <a href="#">Download Resume</a>
+  </header>
+
+  <!-- ================= FLEXBOX SECTION ================= -->
+  <section class="container">
+    <h2>Portfolio Using Flexbox Layout</h2>
+
+    <div class="flex-layout">
+
+      <div class="card">
+        <h2>About Me</h2>
+        <p>I am a passionate full stack developer who enjoys building responsive and scalable web applications.</p>
+      </div>
+
+      <div class="card">
+        <h2>Education</h2>
+        <p>B.Sc Computer Science</p>
+        <p>2023 – 2027</p>
+      </div>
+
+      <div class="card">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Python, Bootstrap</li>
+          <li>Node.js, Express</li>
+          <li>MongoDB, MySQL</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Projects</h2>
+        <ul>
+          <li>Weather Dashboard</li>
+          <li>Skills Exchange Platform</li>
+          <li>Escape Room Game</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Certificates</h2>
+        <ul>
+          <li>Full Stack Web Development</li>
+          <li>Python Certification</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Contact</h2>
+        <p>Email: manangandhi1000@email.com</p>
+        <p>Phone: +91 XXXXXXXXXX</p>
+      </div>
+
+      <div class="card">
+        <h2>Socials</h2>
+        <p><a href="#">GitHub</a></p>
+        <p><a href="#">LinkedIn</a></p>
+        <p><a href="#">Instagram</a></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= GRID SECTION ================= -->
+  <section class="container">
+    <h2>Portfolio Using CSS Grid Layout</h2>
+
+    <div class="grid-layout">
+
+      <div class="card">
+        <h2>About</h2>
+        <p>Creative full stack developer focused on clean UI and efficient backend systems.</p>
+      </div>
+
+      <div class="card">
+        <h2>Education</h2>
+        <p>Computer Science Graduate</p>
+      </div>
+
+      <div class="card">
+        <h2>Skills</h2>
+        <p>HTML • CSS • JS • Python • Node • MongoDB</p>
+      </div>
+
+      <div class="card">
+        <h2>Projects</h2>
+        <p>Portfolio Website, Event Management App, Game Projects</p>
+      </div>
+
+      <div class="card">
+        <h2>Certificates</h2>
+        <p>Web Development Certificate</p>
+      </div>
+
+      <div class="card">
+        <h2>Contact</h2>
+        <p>manangandhi1000@email.com</p>
+      </div>
+
+      <div class="card">
+        <h2>Social Links</h2>
+        <p>GitHub | LinkedIn | Twitter</p>
+      </div>
+
+      <div class="card">
+        <h2>Resume</h2>
+        <a href="#">Click to Download</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>© 2026 Personal Portfolio | Full Stack Development Assignment</p>
+  </footer>
+
+</body>
+</html>
